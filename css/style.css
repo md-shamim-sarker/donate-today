@@ -228,7 +228,7 @@ h2 {
     text-align: left;
 }
 
-/* our Updates Section */
+/* Our Updates Section */
 .our-updates {
     align-items: center;
     display: flex;
@@ -250,7 +250,7 @@ h2 {
 
 .our-updates-form {
     background-color: #FFF4D6;
-    background-color: gray;
+    background-color: #FFF4D6;
     border-radius: 5px;
     padding: 6% 20%;
 }
