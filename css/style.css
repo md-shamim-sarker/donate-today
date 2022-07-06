@@ -165,3 +165,54 @@ h2 {
 #card3 {
     background-color: #FFF4D6;
 }
+
+/* our Updates Section */
+.our-updates {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5%;
+}
+
+.our-updates-text {
+    width: 50vw;
+    text-align: center;
+}
+
+.our-updates-text p {
+    margin: 5%;
+}
+
+.our-updates-form {
+    background-color: gray;
+    padding: 6% 20%;
+    border-radius: 5px;
+    background-color: #FFF4D6;
+}
+
+form {
+    display: flex;
+    column-gap: 0;
+}
+
+form input {
+    border: none;
+    padding: 10px 40px 10px 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 15px;
+    background-color: #D9D9D9;
+}
+
+form button {
+    padding: 10px 30px;
+    border: none;
+    background-color: #FF5959;
+    color: white;
+    font-size: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
