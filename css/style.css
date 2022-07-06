@@ -49,9 +49,10 @@ h2 {
 /* Banner Section */
 .banner {
     align-items: center;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(92, 77, 77, 0)), url("../images/donate-today-banner.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -113,11 +114,12 @@ h2 {
 }
 
 .donate-other input {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid gray !important;
     border: none;
     font-size: 20px;
     margin-bottom: 5%;
     text-align: center;
+    outline-style: none;
 }
 
 
@@ -263,6 +265,7 @@ form input {
     border: none;
     font-size: 15px;
     padding: 10px 40px 10px 15px;
+    outline-style: none;
 }
 
 form button {
