@@ -1,17 +1,20 @@
 /* Common Style */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
+    color: rgb(117, 78, 78);
     font-family: 'Roboto Condensed', sans-serif;
+    overflow-x: hidden;
+    width: 100vw;
 }
 
 h1 {
+    color: rgb(241, 237, 237);
     font-size: 60px;
-    color: white;
 }
 
 h2 {
@@ -19,16 +22,16 @@ h2 {
 }
 
 .link-button {
-    width: 25%;
-    margin: auto;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
     background-color: #FF5959;
     border-radius: 5px;
+    color: rgb(241, 237, 237);
     font-weight: bold;
     letter-spacing: 2px;
+    margin: auto;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
 }
 
 .link-button:hover {
@@ -38,38 +41,38 @@ h2 {
 }
 
 .margin-gap {
-    margin-top: 10px;
-    margin-bottom: 40px;
     font-size: 15px;
+    margin-bottom: 40px;
+    margin-top: 10px;
 }
 
 /* Banner Section */
 .banner {
-    width: 100vw;
-    height: 100vh;
+    align-items: center;
     background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(92, 77, 77, 0)), url("../images/donate-today-banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    height: 100vh;
     justify-content: center;
-    align-items: center;
+    width: 100vw;
 }
 
 .banner-text {
     color: white;
-    width: 50vw;
     text-align: center;
+    width: 50vw;
 }
 
 
 /* Donate Section */
 .donate {
-    width: 100vw;
-    height: 100vh;
+    align-items: center;
     display: flex;
     flex-direction: column;
+    height: 90vh;
     justify-content: center;
-    align-items: center;
+    width: 100vw;
 }
 
 .donate-text {
@@ -78,20 +81,20 @@ h2 {
 }
 
 .donate-amount {
-    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .donate-amount button {
-    width: 120px;
-    height: 100px;
     background-color: rgb(248, 242, 242);
-    border: 2px solid rgb(248, 242, 242);
     border-radius: 5px;
+    border: 2px solid rgb(248, 242, 242);
     color: rgb(58, 47, 47);
     font-size: 30px;
+    height: 100px;
     margin: 10px;
+    width: 120px;
 }
 
 .donate-amount button:hover,
@@ -104,38 +107,38 @@ h2 {
 .donate-other {
     display: flex;
     flex-direction: column;
-    width: 45vw;
     height: 100px;
     justify-content: space-between;
+    width: 45vw;
 }
 
 .donate-other input {
-    font-size: 20px;
-    text-align: center;
-    border: none;
     border-bottom: 1px solid gray;
+    border: none;
+    font-size: 20px;
     margin-bottom: 5%;
+    text-align: center;
 }
 
 
 /* Our Plan Section */
 .our-plan {
-    width: 100vw;
-    height: 100vh;
+    align-items: center;
     display: flex;
     flex-direction: column;
+    height: 60vh;
     justify-content: center;
-    align-items: center;
+    width: 100vw;
 }
 
 .our-plan-text {
-    width: 40vw;
     margin: auto;
     text-align: center;
+    width: 40vw;
 }
 
-.our-plan-text h2 {
-    margin: 15px;
+.our-plan-text p {
+    margin: 7% 0;
 }
 
 .our-plan-cards {
@@ -144,10 +147,10 @@ h2 {
 }
 
 .our-plan-card {
-    width: 250px;
     height: 220px;
     margin: 0 15px 30px;
     padding: 2%;
+    width: 250px;
 }
 
 .our-plan-card h3 {
@@ -166,20 +169,75 @@ h2 {
     background-color: #FFF4D6;
 }
 
-/* our Updates Section */
-.our-updates {
-    width: 100vw;
-    height: 100vh;
+
+/* Acknowledgement Section */
+.acknowledgement {
+    background-color: rgb(240, 250, 250);
     display: flex;
     flex-direction: column;
+    height: 90vh;
     justify-content: center;
+    margin-top: 3%;
+    width: 100vw;
+}
+
+.acknowledgement-text {
+    text-align: center;
+
+}
+
+.acknowledgement-text p {
+    margin: 2% auto;
+    width: 50vw;
+}
+
+.acknowledgement-cards {
+    column-gap: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.acknowledgement-card {
+    background-color: rgb(220, 240, 233);
+    border-radius: 10px;
+    box-shadow: 10px 10px 100px rgb(214, 114, 96);
+    padding: 1%;
+    text-align: center;
+    width: 20vw;
+}
+
+.acknowledgement-card img {
+    border-radius: 50%;
+    border: 5px solid rgb(226, 177, 169);
+    height: 100px;
+    width: 100px;
+}
+
+.acknowledgement-card p {
+    margin: 2%;
+}
+
+.acknowledgement-speech {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10%;
+    text-align: left;
+}
+
+/* our Updates Section */
+.our-updates {
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
     row-gap: 5%;
+    width: 100vw;
 }
 
 .our-updates-text {
-    width: 50vw;
     text-align: center;
+    width: 50vw;
 }
 
 .our-updates-text p {
@@ -187,32 +245,58 @@ h2 {
 }
 
 .our-updates-form {
-    background-color: gray;
-    padding: 6% 20%;
-    border-radius: 5px;
     background-color: #FFF4D6;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 6% 20%;
 }
 
 form {
-    display: flex;
     column-gap: 0;
+    display: flex;
 }
 
 form input {
-    border: none;
-    padding: 10px 40px 10px 15px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    font-size: 15px;
     background-color: #D9D9D9;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: none;
+    font-size: 15px;
+    padding: 10px 40px 10px 15px;
 }
 
 form button {
-    padding: 10px 30px;
-    border: none;
     background-color: #FF5959;
-    color: white;
-    font-size: 15px;
-    border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    color: rgb(241, 237, 237);
+    font-size: 15px;
+    padding: 10px 30px;
+}
+
+
+/* Footer Section */
+footer {
+    align-items: center;
+    background-color: rgb(34, 31, 31);
+    color: rgb(241, 237, 237);
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.social-media {
+    margin: 2%;
+}
+
+.social-media img {
+    opacity: 0.7;
+    width: 30px;
+}
+
+.social-media img:hover {
+    opacity: 1;
 }
