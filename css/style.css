@@ -100,7 +100,8 @@ h2 {
 }
 
 .donate-amount button:hover,
-.donate-amount button:focus {
+.donate-amount button:focus,
+#special-button {
     background-color: #FFEEEE;
     border: 2px solid #FF5959;
     color: #FF5959;
@@ -178,7 +179,6 @@ h2 {
     background-color: rgb(240, 250, 250);
     display: flex;
     flex-direction: column;
-    min-height: auto;
     margin-top: 3%;
     width: 100vw;
     padding: 3%;
