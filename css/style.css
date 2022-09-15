@@ -6,14 +6,14 @@
 }
 
 body {
-    color: rgb(117, 78, 78);
+    color: #754e4e;
     font-family: 'Roboto Condensed', sans-serif;
     overflow-x: hidden;
     width: 100vw;
 }
 
 h1 {
-    color: rgb(241, 237, 237);
+    color: #f1eded;
     font-size: 60px;
 }
 
@@ -24,7 +24,7 @@ h2 {
 .link-button {
     background-color: #FF5959;
     border-radius: 5px;
-    color: rgb(241, 237, 237);
+    color: #f1eded;
     font-weight: bold;
     letter-spacing: 2px;
     margin: auto;
@@ -36,7 +36,7 @@ h2 {
 
 .link-button:hover {
     background-color: #b11914;
-    color: rgb(246, 245, 248);
+    color: #f6f5f8;
 
 }
 
@@ -52,7 +52,7 @@ h2 {
     background-attachment: fixed !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(92, 77, 77, 0)), url("../images/donate-today-banner.jpg");
+    background: linear-gradient(0deg, #000000, #5c4d4d00), url("../images/donate-today-banner.jpg");
     display: flex;
     min-height: 100vh;
     justify-content: center;
@@ -88,10 +88,10 @@ h2 {
 }
 
 .donate-amount button {
-    background-color: rgb(248, 242, 242);
+    background-color: #f8f2f2;
     border-radius: 5px;
-    border: 2px solid rgb(248, 242, 242);
-    color: rgb(58, 47, 47);
+    border: 2px solid #f8f2f2;
+    color: #3a2f2f;
     font-size: 30px;
     min-height: 100px;
     margin: 10px;
@@ -202,9 +202,9 @@ h2 {
 }
 
 .acknowledgement-card {
-    background-color: rgb(220, 240, 233);
+    background-color: #dcf0e9;
     border-radius: 10px;
-    box-shadow: 10px 10px 100px rgb(214, 114, 96);
+    box-shadow: 10px 10px 100px #d67260;
     padding: 1%;
     text-align: center;
     width: 20vw;
@@ -289,8 +289,8 @@ form button:hover {
 /* Footer Section */
 footer {
     align-items: center;
-    background-color: rgb(34, 31, 31);
-    color: rgb(241, 237, 237);
+    background-color: #221f1f;
+    color: #f1eded;
     display: flex;
     flex-direction: column;
     min-height: 30vh;
@@ -309,4 +309,130 @@ footer {
 
 .social-media img:hover {
     opacity: 1;
+}
+
+/* Medium Device */
+@media screen and (max-width: 992px) {
+
+    /* Banner Section */
+    .banner-text {
+        width: 70vw;
+    }
+
+    /* Donate Section */
+    .donate {
+        min-height: auto;
+    }
+
+    /* Our Plan Section */
+    .our-plan {
+        min-height: auto;
+    }
+
+    .our-plan-text {
+        width: 60vw;
+    }
+
+    .our-plan-cards {
+        flex-direction: column;
+    }
+
+    .our-plan-card {
+        width: 70vw;
+        padding: 2rem;
+    }
+
+    .acknowledgement-cards {
+        row-gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .acknowledgement-card {
+        padding: 1%;
+        text-align: center;
+        width: 90vw;
+        padding: 2rem;
+    }
+}
+
+/* Small Device */
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* Banner Section */
+    .banner-text {
+        width: 80vw;
+    }
+
+    /* Donate Section */
+    .donate {
+        min-height: 80vh;
+    }
+
+    .donate-amount {
+        justify-content: center;
+    }
+
+    .donate-text {
+        width: 90%;
+    }
+
+    .donate-text>h2 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .our-plan-text>h2 {
+        font-size: 2.5rem;
+    }
+
+    .donate-other {
+        width: 80vw;
+    }
+
+    .donate-other>a {
+        width: 10rem;
+    }
+
+    .donate-other {
+        margin-bottom: 2rem;
+    }
+
+    .our-plan-card {
+        width: 90vw;
+        padding: 2rem;
+    }
+
+    .our-updates-text {
+        width: 80vw;
+    }
+
+    /* Footer Section */
+    footer p {
+        width: 80vw;
+        text-align: center;
+    }
+
+    .our-updates-form {
+        background-color: #FFF4D6;
+        background-color: #FFF4D6;
+    }
+
+    form {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    form input {
+        border-bottom-left-radius: none;
+        border-top-left-radius: none;
+    }
+
+    form button {
+        border-bottom-right-radius: none;
+        border-top-right-radius: none;
+    }
 }
