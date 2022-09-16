@@ -204,7 +204,7 @@ h2 {
 .acknowledgement-card {
     background-color: #dcf0e9;
     border-radius: 10px;
-    box-shadow: 10px 10px 100px #d67260;
+    box-shadow: 5px 5px 20px #ecbcbc;
     padding: 1%;
     text-align: center;
     width: 20vw;
@@ -417,8 +417,7 @@ footer {
     }
 
     .our-updates-form {
-        background-color: #FFF4D6;
-        background-color: #FFF4D6;
+        padding: 15px;
     }
 
     form {
